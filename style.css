@@ -1,0 +1,29 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: #353839;
+  display: grid;
+  place-items: center;
+  font-family: "Krona One", sans-serif;
+}
+
+h1 {
+  color: white;
+  font-size: 5rem;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.show {
+  display: inline-block;
+  animation: show 0.5s ease calc(var(--char-index) * 30ms) backwards;
+}
